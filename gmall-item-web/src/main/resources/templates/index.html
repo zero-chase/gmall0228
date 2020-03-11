@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<!--ctrl+shift+f9刷新-->
+hello thymeleaf !
+<br/>
+{hello}
+<br/>
+${hello}
+<br>
+<!--1.取值-->
+<p>打底值</p>
+<p th:text="${hello}">打底值</p>
+
+<!--2.循环-->
+<p th:each="str:${list}" th:text="${str}"></p>
+<!--<table border="1">
+    <tr th:each="str:${list}">
+        <td th:text="${str}"></td>
+    </tr>
+</table>
+<p th:each="str:${list}">
+    <input th:text="${str}" th:value="1111" value="222"/>
+</p>-->
+
+<!--3.判断-->
+<p th:if="1==2">我是存在的</p>
+<p th:if="1==1">我是存在的</p>
+<input type="checkbox" th:text="(${check}==1)?'选中':'没选中'" th:checked="${check}==1"/>
+<table border="1">
+    <td th:text="(${check}==1)?'是1':'不是1'"></td>
+</table>
+
+<!--4.传值给javascript-->
+<a th:href="'javascript:a(\''+${hello}+'\');'">点我</a>
+<!--在th中使用js转译 js传参字符串单引号 第一个+号对应第一个单引号  第二个+号对应最后一个单引号，代表th中使用js的结束-->
+<a href="javascript:a('abc')">点</a>
+<a th:href="'javascript:a(\''+${hello}+'\')'">测试</a>
+
+<!--5.页面引入-->
+<div th:include="indexinner::innnerPart">被引入的页面</div>
+
+
+<script language="JavaScript">
+    function a(hello) {
+        alert("js函数被调用" + hello);
+    }
+</script>
+</body>
+</html>
