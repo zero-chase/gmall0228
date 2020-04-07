@@ -1,32 +1,16 @@
-# Created by .ignore support plugin (hsz.mobi)
-HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
-### STS ###
-.apt_generated
+bin/
+.settings/
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+.idea/
 *.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-
-### VS Code ###
-.vscode/
+gmall-api/src/main/resources/
+gmall-api/src/test/
+gmall-common-util/src/main/resources/
+gmall-common-util/src/test/
+gmall-parent/src/
+gmall-service-util/src/main/resources/
+gmall-service-util/src/test/
+gmall-web-util/src/main/resources/
+gmall-web-util/src/test/
