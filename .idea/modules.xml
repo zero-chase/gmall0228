@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" filepath="$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-api/gmall-api.iml" filepath="$PROJECT_DIR$/gmall-api/gmall-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" filepath="$PROJECT_DIR$/gmall-cart-service/gmall-cart-service.iml" />
