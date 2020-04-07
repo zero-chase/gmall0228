@@ -17,7 +17,7 @@ spring:
       protocol: zookeeper #zookeeper的通讯协议的名称
     base-package: com.atguigu.gmall #dubbo的服务扫描路径
   redis:
-    host: 192,168,109.4 #redis链接地址
+    host: 192.168.109.3 #redis链接地址
     port: 6379  #redis端口号
     database: 0 #redis数据库
 

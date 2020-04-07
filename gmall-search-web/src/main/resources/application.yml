@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  dubbo:
+    application: search-web #在服务中的名称
+    protocol:
+      name: dubbo #dubbo协议的通讯名称
+    registry:
+      address: 192.168.109.3:2181 #zookeeper注册中心的地址
+      protocol: zookeeper #zookeeper通讯协议的名称
+    base-package: com.atguigu.gmall #dubbo服务的扫描路径
+    consumer:
+      timeout: 60000 #设置超时时间
+      check: false #设置是否检查服务存在
+  thymeleaf:
+    cache: false #关闭thymeleaf缓存（热部署）
+    mode: LEGACYHTML5  #松校验
+
+logging:
+  level:
+    root: info
+

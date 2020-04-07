@@ -28,7 +28,7 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true #该配置是指将带有下划线的表字段映射为驼峰格式的实体类属性（true 开启）
 
-#设置日志几倍 debug可以查看sql语句
+#设置日志级别 debug可以查看sql语句
 logging:
   level:
     root: info
