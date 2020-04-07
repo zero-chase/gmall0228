@@ -1,16 +1,33 @@
+HELP.md
 target/
-bin/
-.settings/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.idea/
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
-gmall-api/src/main/resources/
-gmall-api/src/test/
-gmall-common-util/src/main/resources/
-gmall-common-util/src/test/
-gmall-parent/src/
-gmall-service-util/src/main/resources/
-gmall-service-util/src/test/
-gmall-web-util/src/main/resources/
-gmall-web-util/src/test/
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+*.log
+
