@@ -26,7 +26,7 @@
         <dubbo.version>2.6.0</dubbo.version>
         <zkclient.version>0.10</zkclient.version>
         <mybatis.version>2.1.1</mybatis.version>
-        <mysql.version>8.0.11</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <!--   <nekohtml.version>1.9.22</nekohtml.version>-->
         <xml-apis.version>1.4.01</xml-apis.version>
         <batik-ext.version>1.9.1</batik-ext.version>
